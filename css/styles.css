@@ -1,0 +1,197 @@
+:root {
+  /* Colors */
+  --color-red: #ea5353;                
+  --color-cyan: #45d3d3;            
+  --color-orange: #fcaf4a;             
+  --color-blue: #549ef2;          
+  --color-very-dark-blue: #4c4e61;              
+  --color-grayish-blue: #a3a5ae;           
+  --color-very-light-gray: #fafafa;            
+  --color-white: #ffff;       
+  
+  
+  /* Font sizes */
+  --font-36px:calc(36 / 16 * 1rem);                  
+  --font-24px: calc(24 / 16 * 1rem);         
+  --font-20px: calc(20 / 16 * 1rem);        
+  --font-15px: calc(15 / 16 * 1rem);              
+  --font-13px: calc(13 / 16 * 1rem);             
+
+  /* font weight */
+  --font-regular: 200;            
+  --font-semibold: 400;             
+  --font-bold: 600;           
+
+  
+  /* letter-spacing */
+  --letter-spacing025:0.25px;             
+  --letter-spacing017:0.17px;              
+  --letter-spacing01:0.1px              
+  --letter-spacing009:0.09px 
+}
+
+body,
+.flex__container,
+.description__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: var(--color-very-light-gray);
+  padding: calc(85 / 16 * 1rem) calc(32 / 16 * 1rem) calc(85 / 16 * 1rem)
+    calc(32 / 16 * 1rem);
+
+  /* center main and footer  */
+  gap: calc((20 / 16) * 1rem);
+}
+
+.flex__container {
+  gap: calc((76 / 16) * 1rem);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: calc((1 / 16) * 1rem);
+  height: calc((1 / 16) * 1rem);
+  padding: 0;
+  margin: calc((-1 / 16) * 1rem);
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* MULTIPLE SELECTORS */
+#title,
+.description,
+.card__text {
+  font-weight: var(--font-regular);
+}
+
+#title,
+.card__title {
+  color: var(--color-very-dark-blue);
+}
+
+.description,
+.card__text {
+  color: var(--color-grayish-blue);
+}
+
+#title span,
+.card__title {
+  font-weight: var(--font-bold);
+}
+
+/* TITLE AND DESCRIPTION----------------------------- */
+.description__container {
+  gap: calc((16 / 16) * 1rem);
+}
+
+#title {
+  font-size: var(--font-24px);
+  letter-spacing: var(--letter-spacing017);
+  line-height: 1.45;
+  padding-left: calc((7 / 16) * 1rem);
+  padding-right: calc((7 / 16) * 1rem);
+}
+
+.description {
+  font-size: var(--font-15px);
+  letter-spacing: var(--letter-spacing01);
+  line-height: 1.67;
+  text-align: center;
+}
+
+/* GRID WITH CARDS------------------------------------ */
+.grid__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: calc((25 / 16) * 1rem);
+}
+
+/* SET THE CARDS IN GRID CELLS */
+.supervisor__in__grid {
+  grid-row: 1;
+}
+
+.team__builder__in__grid {
+  grid-row: 2;
+}
+
+.karma__in__grid {
+  grid-row: 3;
+}
+
+.calculator__in__grid {
+  grid-row: 4;
+}
+
+/* CARDS */
+.grid__container__card {
+  min-width: calc((311 / 16) * 1rem);
+  min-height: calc((222 / 16) * 1rem);
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 calc((4 / 16) * 1rem) calc((4 / 16) * 1rem) 0
+    rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.card__title {
+  font-size: var(--font-20px);
+  padding: calc((24 / 16) * 1rem) calc((28 / 16) * 1rem) 0
+    calc((28 / 16) * 1rem);
+  line-height: 1.5;
+}
+
+.card__text {
+  font-size: var(--font-13px);
+  letter-spacing: var(--letter-spacing009);
+  line-height: 1.77;
+  padding: 0 calc((28 / 16) * 1rem) 0 calc((28 / 16) * 1rem);
+}
+
+.card__img {
+  display: block;
+  min-width: calc((57 / 16) * 1rem);
+  min-height: calc((57 / 16) * 1rem);
+  padding: calc((33 / 16) * 1rem) calc((28 / 16) * 1rem) calc((28 / 16) * 1rem)
+    calc((226 / 16) * 1rem);
+}
+
+/* COLORED LINE ON THE TOP OF THE CONTAINERS */
+.line__cyan,
+.line__red,
+.line__orange,
+.line__blue {
+  height: 4px;
+}
+
+.line__cyan {
+  background-color: var(--color-cyan);
+}
+
+.line__red {
+  background-color: var(--color-red);
+}
+
+.line__orange {
+  background-color: var(--color-orange);
+}
+
+.line__blue {
+  background-color: var(--color-blue);
+}
+
+/* FOOTER-------------------------------------------- */
+.attribution {
+  font-size: calc((11 / 16) * 1rem);
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-blue);
+}

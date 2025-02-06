@@ -1,0 +1,84 @@
+/* 1st breakpoint at 400px(25em) because this is the point where the design of the cards break (height vs width). The card after that point has it's final dimensions and is not scaling any more */
+
+@media (min-width: 25em) {
+  .description__container {
+    max-width: calc(440 / 16 * 1rem);
+    /* max-height: calc(168 / 16 * 1rem); */
+    gap: calc((16 / 16) * 1rem);
+  }
+
+  .grid__container__card {
+    width: calc((350 / 16) * 1rem);
+    height: calc((250 / 16) * 1rem);
+  }
+
+  .card__title {
+    padding: calc((28 / 16) * 1rem) 0 calc((6 / 16) * 1rem)
+      calc((32 / 16) * 1rem);
+  }
+
+  .card__text {
+    padding: 0 calc((32 / 16) * 1rem) 0 calc((32 / 16) * 1rem);
+  }
+
+  .card__img {
+    min-width: calc((64 / 16) * 1rem);
+    min-height: calc((64 / 16) * 1rem);
+    padding: calc((40 / 16) * 1rem) calc((32 / 16) * 1rem)
+      calc((32 / 16) * 1rem) calc((254 / 16) * 1rem);
+  }
+}
+
+@media (min-width: 75em) {
+  body {
+    padding: calc(80 / 16 * 1rem) calc(165 / 16 * 1rem) calc(80 / 16 * 1rem)
+      calc(165 / 16 * 1rem);
+  }
+
+  .flex__container {
+    gap: calc((64 / 16) * 1rem);
+  }
+
+  /* TITLE AND DESCRIPTION----------------------------- */
+  .description__container {
+    max-width: calc(540 / 16 * 1rem);
+    gap: calc((16 / 16) * 1rem);
+  }
+
+  #title {
+    font-size: var(--font-36px);
+    letter-spacing: var(--letter-spacing025);
+    line-height: 1.42;
+  }
+
+  /* GRID WITH CARDS------------------------------------ */
+  .grid__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: calc((30 / 16) * 1rem);
+  }
+
+  /* SET THE CARDS IN GRID CELLS */
+  .supervisor__in__grid {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    place-self: center;
+  }
+
+  .team__builder__in__grid {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .karma__in__grid {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .calculator__in__grid {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    place-self: center;
+  }
+}

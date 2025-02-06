@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/css-reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Four card feature section</title>
+  </head>
+  <body>
+    <main>
+      <article aria-labelledby="main__container" class="flex__container">
+        <h1 id="main__container" class="visually-hidden">
+          Page's main container
+        </h1>
+        <!-- TITLE AND DESCRIPTION -->
+        <section aria-labelledby="title" class="description__container">
+          <h2 id="title">
+            Reliable, efficient delivery
+            <br />
+            <span>Powered by Technology</span>
+          </h2>
+
+          <p class="description">
+            Our Artificial Intelligence powered tools use millions of project
+            data points to ensure that your project is successful
+          </p>
+        </section>
+
+        <!-- GRID WITH CARDS -->
+        <section aria-labelledby="cards_container" class="grid__container">
+          <h3 id="cards_container" class="visually-hidden">
+            Page's cards container
+          </h3>
+          <!-- SUPERVISOR CARD -->
+          <div class="supervisor__in__grid grid__container__card">
+            <div class="line__cyan"></div>
+            <h3 class="card__title">Supervisor</h3>
+            <p class="card__text">
+              Monitors activity to identify project roadblocks
+            </p>
+            <img
+              class="card__img"
+              src="images/icon-supervisor.svg"
+              alt="Search icon"
+              loading="lazy"
+            />
+          </div>
+          <!-- TEAM BUIDER CARD -->
+          <div class="team__builder__in__grid grid__container__card">
+            <div class="line__red"></div>
+            <h3 class="card__title">Team Builder</h3>
+            <p class="card__text">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <img
+              class="card__img"
+              src="images/icon-team-builder.svg"
+              alt="Homepage icon"
+              loading="lazy"
+            />
+          </div>
+          <!-- KARMA CARD -->
+          <div class="karma__in__grid grid__container__card">
+            <div class="line__orange"></div>
+            <h3 class="card__title">Karma</h3>
+            <p class="card__text">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <img
+              class="card__img"
+              src="images/icon-karma.svg"
+              alt="Idea     icon"
+              loading="lazy"
+            />
+          </div>
+          <!-- CALCULATOR CARD -->
+          <div class="calculator__in__grid grid__container__card">
+            <div class="line__blue"></div>
+            <h3 class="card__title">Calculator</h3>
+            <p class="card__text">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <img
+              class="card__img"
+              src="images/icon-calculator.svg"
+              alt="Software icon"
+              loading="lazy"
+            />
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/VirginiaPat"
+          target="_blank"
+          >Virginia Patrika</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
