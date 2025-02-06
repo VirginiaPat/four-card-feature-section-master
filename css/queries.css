@@ -1,5 +1,4 @@
-/* 1st breakpoint at 400px(25em) because this is the point where the design of the cards break (height vs width). The card after that point has it's final dimensions and is not scaling any more */
-
+/* BREAKPOINT 400px:25em */
 @media (min-width: 25em) {
   .description__container {
     max-width: calc(440 / 16 * 1rem);
@@ -29,6 +28,38 @@
   }
 }
 
+/* BREAKPOINT 752px:47em */
+@media (min-width: 47em) {
+  .grid__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: calc((25 / 16) * 1rem);
+  }
+
+  /* SET THE CARDS IN GRID CELLS */
+  .supervisor__in__grid {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .team__builder__in__grid {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .karma__in__grid {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .calculator__in__grid {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+/* BREAKPOINT 1200px:75em */
 @media (min-width: 75em) {
   body {
     padding: calc(80 / 16 * 1rem) calc(165 / 16 * 1rem) calc(80 / 16 * 1rem)
