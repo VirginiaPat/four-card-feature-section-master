@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./Screenshot Four card feature section.png)
+![Screenshot](./Screenshot-Four-card-feature-section.png)
 
 ### Links
 
